@@ -1,0 +1,20 @@
+@import url(_card.scss);
+body {
+    color: white;
+    background-color: #04101b;
+}
+
+main {
+    margin-left: 300px;
+}
+
+.sidebar {
+    position: absolute;
+    left: 0;
+}
+
+.bg-cover-fit {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

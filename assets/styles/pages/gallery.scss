@@ -1,0 +1,39 @@
+.page-gallery {
+    color: white;
+}
+
+.btn-gallery-action {
+    @apply flex justify-start items-center;
+    .page-gallery-btn {
+        @apply rounded-md;
+        color: white;
+        margin: 1rem;
+        background-color: #ff4e58;
+        padding: 0.5rem;
+    }
+}
+
+.album-card {
+    background-color: #091c2d;
+    background-color: #091c2d;
+    padding: 1rem;
+    margin: 15px;
+    width: 200px;
+    height: 100px;
+    background-position: centered;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    @apply rounded flex justify-center items-center;
+    .album-title-text {
+        position: relative;
+        color: white;
+        z-index: 99;
+        @apply text-base;
+    }
+}
+
+.title-gallery {
+    @apply mb-8;
+    font-size: 1.125rem;
+}
