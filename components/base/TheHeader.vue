@@ -1,3 +1,19 @@
+<script setup>
+
+const menuList = [{
+    'title': "Discover",
+    'target': "#"
+}, {
+    'title': "Boost",
+    'target': "#"
+}, {
+    'title': "Blog",
+    'target': "#"
+},
+]
+
+</script>
+
 <template>
     <header class="sticky top-0 z-99 w-full shadow-xl bg-gank-gray-8">
         <div class="

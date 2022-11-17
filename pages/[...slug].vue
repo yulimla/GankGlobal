@@ -15,7 +15,9 @@ definePageMeta({
                     <div class="banner-cover__wrapper aspect-w-16 aspect-h-9 md:aspect-w-75 md:aspect-h-14 mx-auto hidden md:block"></div>
                 </div>
                 <div class="user-profile-info">
-                    <div class="user-profile-info__wrapper">
+                    <div class="user-profile-info__wrapper
+                         
+                        ">
                         <div data-v-694b6a4d="" class="flex-1 text-white">
                             <div data-v-694b6a4d="" class="flex space-x-4">
                                 <div data-v-694b6a4d=""
@@ -124,5 +126,5 @@ definePageMeta({
 
 
 <style scoped lang="scss" >
-@import url(../assets/styles/pages/profile.scss);
+@import url('~/assets/styles/pages/profile.scss');
 </style>

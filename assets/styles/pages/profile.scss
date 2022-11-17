@@ -1,7 +1,7 @@
 .user-profile-info {
     @apply hidden md:flex justify-center mt-4 pb-0 px-4 xl:px-0 relative;
-    &__wrapper {
-        @apply flex pb-4 flex-col md:flex-row w-full rounded md:items-between xl:w-[1100px];
+    .user-profile-info__wrapper {
+        @apply flex pb-4 flex-col md:flex-row w-full rounded ;
     }
 }
 
@@ -9,11 +9,8 @@
     background: red;
     @apply mx-auto;
     max-height: 275px;
-    // .banner-cover__wrapper {
-    //     // @apply aspect-w-16 aspect-h-9 md:aspect-w-75 md:aspect-h-14 mx-auto hidden md:block;
-    // }
 }
-
+ 
 .profile-tab {
     display: flex;
     flex-direction: row;
