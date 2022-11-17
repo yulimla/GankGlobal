@@ -1,7 +1,7 @@
 
 <script setup>
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
-
+import theGallery from "../components/gallery/GalleryList.vue"
 definePageMeta({
     layout: "profile",
 });
@@ -9,22 +9,13 @@ definePageMeta({
 
 <template>
     <div>
-        <p>{{ $route.params.slug }}</p>
-
-        <div class="container">
-            <div class="banner">
-                <div data-v-694b6a4d="" id="user" class="hidden md:flex justify-center mt-4 pb-0 px-4 xl:px-0 relative">
-                    <div data-v-694b6a4d="" class="
-                          flex
-                          pb-4
-                          flex-col
-                          md:flex-row
-                          w-full
-                          rounded
-                          md:items-between
-                          xl:w-[1100px]
-                          border-b
-                         border-white border-opacity-20">
+        <div class="container mx-auto">
+            <div class="banner 5xl:max-w-[1500px]">
+                <div class="banner-cover relative">
+                    <div class="banner-cover__wrapper aspect-w-16 aspect-h-9 md:aspect-w-75 md:aspect-h-14 mx-auto hidden md:block"></div>
+                </div>
+                <div class="user-profile-info">
+                    <div class="user-profile-info__wrapper">
                         <div data-v-694b6a4d="" class="flex-1 text-white">
                             <div data-v-694b6a4d="" class="flex space-x-4">
                                 <div data-v-694b6a4d=""
@@ -105,14 +96,25 @@ definePageMeta({
         <div class="profile-tabs">
             <TabGroup>
                 <TabList class="tablist">
-                    <Tab>Tab 1</Tab>
-                    <Tab>Tab 2</Tab>
-                    <Tab>Tab 3</Tab>
+                    <Tab>
+                        Profile
+                    </Tab>
+                    <Tab>
+                        Feed
+                    </Tab>
+                    <Tab>
+                        Gallery
+                    </Tab>
+                    <Tab>
+                        Shop
+                    </Tab>
+
                 </TabList>
                 <TabPanels>
                     <TabPanel>Content 1</TabPanel>
                     <TabPanel>Content 2</TabPanel>
-                    <TabPanel>Content 3</TabPanel>
+                    <TabPanel><theGallery></theGallery></TabPanel>
+                    <TabPanel>Content 4</TabPanel>
                 </TabPanels>
             </TabGroup>
         </div>
@@ -122,40 +124,5 @@ definePageMeta({
 
 
 <style scoped lang="scss" >
-.profile-tab {
-    display: flex;
-    flex-direction: row;
-    transition: margin-left .3s cubic-bezier(.645, .045, .355, 1);
-    will-change: margin-left;
-
-    font-size: 1.25rem !important;
-    margin-left: 0 !important;
-    font-weight: 500 !important;
-}
-
-.tablist {
-
-    button {
-            position: relative;
-            display: inline-block;
-            box-sizing: border-box;
-            height: 100%;
-            margin: 0 32px 0 0;
-            padding: 12px 16px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: color .3s cubic-bezier(.645, .045, .355, 1);
-            &:before {
-                    position: absolute;
-                    top: -1px;
-                    left: 0;
-                    width: 100%;
-                    border-top: 2px solid transparent;
-                    border-radius: 4px 4px 0 0;
-                    transition: all .3s;
-                    content: "";
-                    pointer-events: none;
-                }
-    }
-}
+@import url(../assets/styles/pages/profile.scss);
 </style>
