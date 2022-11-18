@@ -23,11 +23,12 @@ const menuList = [{
                 <img src="@/public/Logo_Gank_WebBeta.png" alt="Gank" class="h-full object-contain">
             </NuxtLink>
             <!---->
-            <div class="menu-link">
-                <!-- <div class="language-switcher">
+            <!-- menu link mobile -->
+            <div class="menu-link lg:hidden">
+                <div class="language-switcher">
                     <img src="https://ganknow.com/img/country-lang.010232c.svg" alt="preference">
                     <span class="uppercase">ID-id</span>
-                </div> -->
+                </div>
                 <div class="w-10 h-10 flex-none flex justify-end items-center lg:hidden">
                     <i aria-label="icon: menu" tabindex="-1" class="text-2xl !text-white anticon anticon-menu">
                         <svg viewBox="64 64 896 896" data-icon="menu" width="1em" height="1em" fill="currentColor"
@@ -40,6 +41,8 @@ const menuList = [{
                     <!---->
                 </div>
             </div>
+                        <!-- menu link large -->
+
             <div class="hidden w-full items-center justify-between lg:flex lg:flex-row lg:ml-8">
                 <ul data-v-c3197312="" class="
         flex flex-col
