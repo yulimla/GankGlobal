@@ -19,26 +19,24 @@ const menuList = [{
     <header class="">
         <div class="
          header-wrapper">
-        <NuxtLink to="/" class="">
-            Nuxt website
-
-        </NuxtLink>
-            <a href="/" aria-current="page"
-                class="inline-flex h-10 w-auto mr-2 md:mr-16 2xl:h-[60px] 2xl:w-auto nuxt-link-exact-active nuxt-link-active"><img
-                    src="@/public/Logo_Gank_WebBeta.png" alt="Gank" class="h-full object-contain">
-            </a>
+            <NuxtLink to="/" class="gank-logo">
+                <img src="@/public/Logo_Gank_WebBeta.png" alt="Gank" class="h-full object-contain">
+            </NuxtLink>
             <!---->
-            <div class="flex items-center lg:hidden">
-                <div class="language-switcher"><img src="https://ganknow.com/img/country-lang.010232c.svg"
-                        alt="preference"> <span class="uppercase">ID-id</span></div>
-                <div class="w-10 h-10 flex-none flex justify-end items-center lg:hidden"><i aria-label="icon: menu"
-                        tabindex="-1" class="text-2xl !text-white anticon anticon-menu"><svg viewBox="64 64 896 896"
-                            data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true"
-                            focusable="false" class="">
+            <div class="menu-link">
+                <!-- <div class="language-switcher">
+                    <img src="https://ganknow.com/img/country-lang.010232c.svg" alt="preference">
+                    <span class="uppercase">ID-id</span>
+                </div> -->
+                <div class="w-10 h-10 flex-none flex justify-end items-center lg:hidden">
+                    <i aria-label="icon: menu" tabindex="-1" class="text-2xl !text-white anticon anticon-menu">
+                        <svg viewBox="64 64 896 896" data-icon="menu" width="1em" height="1em" fill="currentColor"
+                            aria-hidden="true" focusable="false" class="">
                             <path
                                 d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
                             </path>
-                        </svg></i>
+                        </svg>
+                    </i>
                     <!---->
                 </div>
             </div>
@@ -52,7 +50,7 @@ const menuList = [{
         2xl:space-x-10
       ">
                     <li data-v-c3197312=""><a data-v-c3197312="" href="/discover" class="menu-item-link text-white">
-                            Temukan
+                            Discover
                         </a></li>
                     <li data-v-c3197312=""><a data-v-c3197312="" href="/boost" class="menu-item-link text-white">
                             Boost
@@ -101,6 +99,6 @@ const menuList = [{
     </header>
 </template>
 
-<style scoped>
-@import url('@/assets/styles/components/theHeader.css');
+<style scoped lang="scss">
+@import url('@/assets/styles/components/theHeader.scss');
 </style>
