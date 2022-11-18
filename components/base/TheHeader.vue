@@ -1,5 +1,6 @@
 <script setup>
-
+//import "@/assets/styles/components/theHeader.scss";
+// import "@/assets/styles/components/theHeader
 const menuList = [{
     'title': "Discover",
     'target': "#"
@@ -17,7 +18,11 @@ const menuList = [{
 <template>
     <header class="">
         <div class="
-         header-wrapper h-[60px]">
+         header-wrapper">
+        <NuxtLink to="/" class="">
+            Nuxt website
+
+        </NuxtLink>
             <a href="/" aria-current="page"
                 class="inline-flex h-10 w-auto mr-2 md:mr-16 2xl:h-[60px] 2xl:w-auto nuxt-link-exact-active nuxt-link-active"><img
                     src="@/public/Logo_Gank_WebBeta.png" alt="Gank" class="h-full object-contain">
@@ -96,6 +101,6 @@ const menuList = [{
     </header>
 </template>
 
-<style lang="scss">
-@include url('@/assets/styles/components/theHeader.scss')
+<style scoped>
+@import url('@/assets/styles/components/theHeader.css');
 </style>
