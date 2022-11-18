@@ -5,13 +5,69 @@
     padding: 1rem 0.7rem;
 }
 
-
-
-.gank-logo{
-    @apply inline-flex h-10 w-auto mr-2 md:mr-16 2xl:h-[60px] 2xl:w-auto;
-
+.gank-logo {
+    @apply inline-flex h-10 w-auto mr-2;
+    @screen md {
+        @apply mr-16;
+    }
+    @screen 2xl {
+        @apply h-[60px] w-auto;
+    }
 }
 
-.menu-link{
-    @apply flex items-center lg:hidden;
+.menu-link-mobile {
+    @apply flex items-center;
+    @screen lg {
+        @apply hidden;
+    }
+}
+
+.menu-link {
+    @apply hidden w-full items-center justify-between;
+    @screen lg {
+        @apply flex flex-row ml-8;
+    }
+    .menu-link-list {
+        @apply flex flex-col items-center space-y-5 mt-6;
+        @screen xl {
+            @apply flex-row space-x-5;
+        }
+        @screen 2xl {
+            @apply space-x-10
+        }
+    }
+    li {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+.menu-item-link {
+    @apply uppercase font-bold;
+}
+
+.menu-link-action {
+    @apply flex items-center;
+    &__items {
+        @apply flex justify-start items-center space-x-4;
+    }
+}
+
+.gank-avatar-profile {
+    display: flex;
+    align-items: center;
+    img {
+        max-width: 50px;
+        @apply rounded-full mr-3;
+    }
+    .profile-name {
+        @apply font-medium;
+    }
+}
+
+.notification {
+    svg {
+        width: 30px;
+        height: 30px;
+    }
 }
