@@ -15,22 +15,13 @@ const menuList = [{
 </script>
 
 <template>
-    <header class="sticky top-0 z-99 w-full shadow-xl bg-gank-gray-8">
+    <header class="">
         <div class="
-          w-full
-          flex
-          justify-between
-          items-center
-          px-5
-          5xl:px-0
-          2xl:h-[72px] 2xl:mx-auto
-          5xl:w-[1500px] 5xl:h-[72px]
-          relative
-         h-[60px]">
+         header-wrapper h-[60px]">
             <a href="/" aria-current="page"
                 class="inline-flex h-10 w-auto mr-2 md:mr-16 2xl:h-[60px] 2xl:w-auto nuxt-link-exact-active nuxt-link-active"><img
-                    src="https://ganknow.com/img/Logo_Gank_WebBeta.c540a6d.png" alt="Gank"
-                    class="h-full object-contain"></a>
+                    src="@/public/Logo_Gank_WebBeta.png" alt="Gank" class="h-full object-contain">
+            </a>
             <!---->
             <div class="flex items-center lg:hidden">
                 <div class="language-switcher"><img src="https://ganknow.com/img/country-lang.010232c.svg"
@@ -104,3 +95,7 @@ const menuList = [{
         </div>
     </header>
 </template>
+
+<style lang="scss">
+@include url('@/assets/styles/components/theHeader.scss')
+</style>

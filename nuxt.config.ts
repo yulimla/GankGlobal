@@ -13,7 +13,7 @@ export default defineNuxtConfig({
             "Gank is a content membership platform that helps content creators accept donations, manage memberships and sell merch, for free.",
         },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
   modules: ["@nuxtjs/tailwindcss"],
