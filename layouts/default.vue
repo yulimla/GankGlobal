@@ -1,18 +1,17 @@
 <script setup>
 import TheHeaderVue from '../components/base/TheHeader.vue';
-import TheSidebar from '../components/base/TheSidebar.vue';
+// import TheSidebar from '../components/base/TheSidebar.vue';
 // import TheGallery from './components/gallery/GalleryList.vue'
 </script>
 <template>
   <div>
     <TheHeaderVue></TheHeaderVue>
-    <div class="container mx-auto relative">
+    <!-- <div class="container mx-auto relative">
       <TheSidebar></TheSidebar>
-      <!-- <TheGallery></TheGallery> -->
       <main>
         <slot />
       </main>
-    </div>
+    </div> -->
     <!-- <NuxtWelcome /> -->
   </div>
 </template>

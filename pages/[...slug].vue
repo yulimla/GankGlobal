@@ -18,7 +18,7 @@ definePageMeta({
                     <div class="user-profile-info__wrapper
                          
                         ">
-                        <div data-v-694b6a4d="" class="flex-1 text-white">
+                        <div class="flex-1 text-white">
                             <div data-v-694b6a4d="" class="flex space-x-4">
                                 <div data-v-694b6a4d=""
                                     class="relative w-full h-full md:w-[120px] md:h-[120px] mb-4 -top-10">

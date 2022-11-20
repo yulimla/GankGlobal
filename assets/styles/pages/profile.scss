@@ -1,7 +1,17 @@
 .user-profile-info {
-    @apply hidden md:flex justify-center mt-4 pb-0 px-4 xl:px-0 relative;
+    @apply hidden mt-4 pb-0 px-4 relative;
     .user-profile-info__wrapper {
-        @apply flex pb-4 flex-col md:flex-row w-full rounded ;
+        @apply flex pb-4 flex-col  w-full rounded;
+        @screen md {
+            @apply flex-row;
+        }
+    }
+    @screen sm {
+        @apply flex justify-center;
+    }
+
+    @screen xl {
+        @apply px-0;
     }
 }
 
@@ -10,11 +20,11 @@
     @apply mx-auto;
     max-height: 275px;
 }
- 
+
 .profile-tab {
     display: flex;
     flex-direction: row;
-    transition: margin-left .3s cubic-bezier(.645, .045, .355, 1);
+    transition: margin-left 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     will-change: margin-left;
     font-size: 1.25rem !important;
     margin-left: 0 !important;
@@ -23,7 +33,7 @@
 
 .tablist {
     border-style: solid !important;
-    border-bottom: 1px solid rgba(147, 126, 126, .45098039215686275) !important;
+    border-bottom: 1px solid rgba(147, 126, 126, 0.45098039215686275) !important;
     button {
         position: relative;
         display: inline-block;
@@ -33,7 +43,7 @@
         padding: 12px 16px;
         text-decoration: none;
         cursor: pointer;
-        transition: color .3s cubic-bezier(.645, .045, .355, 1);
+        transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
         border: none;
         &:hover,
         &:focus,
