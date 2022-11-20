@@ -1,5 +1,5 @@
 <template>
-    <div class="page-gallery">
+    <div class="page-gallery" >
         <div class="btn-gallery-action">
             <div class="btn page-gallery-btn">Add Image</div>
             <div class="btn page-gallery-btn">New Album</div>

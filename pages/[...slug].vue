@@ -11,28 +11,25 @@ definePageMeta({
     <div>
         <div class="container mx-auto">
             <div class="banner 5xl:max-w-[1500px]">
-                <div class="banner-cover relative">
+                <div class="banner-cover relative" style="background-image: url('/banner.webp');">
                     <div class="banner-cover__wrapper aspect-w-16 aspect-h-9 md:aspect-w-75 md:aspect-h-14 mx-auto hidden md:block"></div>
                 </div>
-                <div class="user-profile-info">
+                <div class="user-profile-info           xl:w-[1100px] mx-auto">
                     <div class="user-profile-info__wrapper
                          
                         ">
                         <div class="flex-1 text-white">
-                            <div data-v-694b6a4d="" class="flex space-x-4">
-                                <div data-v-694b6a4d=""
-                                    class="relative w-full h-full md:w-[120px] md:h-[120px] mb-4 -top-10">
-                                    <div data-v-694b6a4d=""
-                                        class="relative flex justify-center md:aspect-w-1 md:aspect-h-1">
-                                        <!----> <img data-v-694b6a4d=""
-                                            src="https://lh3.googleusercontent.com/a/ALm5wu0DY5B_h07YhZZkjkdYG69rc7__VJK72U2_8II=s96-c"
+                            <div class="flex space-x-4">
+                                <div class="relative w-full h-full md:w-[120px] md:h-[120px] mb-4 -top-10">
+                                    <div class="relative flex justify-center md:aspect-w-1 md:aspect-h-1">
+                                        <!----> <img src="https://lh3.googleusercontent.com/a/ALm5wu0DY5B_h07YhZZkjkdYG69rc7__VJK72U2_8II=s96-c"
                                             alt="sandromega"
                                             class="object-cover rounded-full w-24 border-solid border-white"
                                             style="border-width: 4px;">
                                     </div>
                                     <!---->
                                 </div>
-                                <div data-v-694b6a4d="" class="md:min-w-[300px] md:pl-4 space-y-1">
+                                <div class="md:min-w-[300px] md:pl-4 space-y-1">
                                     <div data-v-694b6a4d=""
                                         class="flex flex-row flex-wrap items-center justify-start space-x-2"><a
                                             data-v-694b6a4d="" href="/sandromega" class="nuxt-link-active">
@@ -95,7 +92,7 @@ definePageMeta({
 
         <!-- // profile tabs -->
 
-        <div class="profile-tabs">
+        <div class="profile-tabs xl:w-[1100px] mx-auto">
             <TabGroup>
                 <TabList class="tablist">
                     <Tab>

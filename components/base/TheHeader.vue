@@ -21,7 +21,7 @@ const menuList = [{
          header-wrapper">
             <NuxtLink to="/" class="gank-logo">
                 <img src="/Logo_Gank_WebBeta.png" alt="Gank" class="h-full object-contain">
-            </NuxtLink>
+            </NuxtLink> 
             <!---->
             <!-- menu link mobile -->
             <div class="menu-link-mobile ">

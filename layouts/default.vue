@@ -6,17 +6,15 @@ import TheHeaderVue from '../components/base/TheHeader.vue';
 <template>
   <div>
     <TheHeaderVue></TheHeaderVue>
-    <!-- <div class="container mx-auto relative">
-      <TheSidebar></TheSidebar>
+    <div class="container mx-auto relative">
+      <!-- <TheSidebar></TheSidebar> -->
       <main>
         <slot />
       </main>
-    </div> -->
-    <!-- <NuxtWelcome /> -->
+    </div>
   </div>
 </template>
-<style >
-
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 body,
 html {
