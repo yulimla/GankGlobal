@@ -1,8 +1,7 @@
 .user-profile-info {
-    @apply hidden mt-4 pb-0 px-4 relative;
+    @apply mt-4 pb-2 px-4 relative;
     .user-profile-info__wrapper {
-        @apply flex pb-4 flex-col w-full rounded;
-        @screen md {}
+        @apply flex pb-4 flex-row items-start w-full rounded;
     }
     @screen sm {
         @apply flex justify-center;
@@ -12,21 +11,23 @@
     }
 }
 
-
 /* start banner */
 
 .banner-cover {
-    background: red;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     @apply mx-auto;
-    max-height: 275px;
-    .banner-cover__wrapper {
-        margin-top: 90px;
+    max-height: 200px;
+    @screen sm {
+        max-height: 275px;
     }
 }
 
+/* followers-section */
+.followers-section {
+    display: flex;
+}
 
 /* end banner */
 
@@ -55,6 +56,8 @@
         cursor: pointer;
         transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
         border: none;
+        font-size: 1.25rem !important;
+          color: #67687e;
         &:hover,
         &:focus,
         &:active,
@@ -69,4 +72,14 @@
         margin-bottom: -1px;
         z-index: 2;
     }
+
+    @media (max-width: 768px) {
+        button {
+            margin-right: 15px;
+        }
+    }
 }
+
+
+/* profile-tabs */
+

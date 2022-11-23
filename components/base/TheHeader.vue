@@ -59,7 +59,7 @@ const menuList = [{
 
                     <div class="menu-link-action__items">
                         <NuxtLink to="/yulimla" class="gank-avatar-profile">
-                            <img src="https://lh3.googleusercontent.com/a/ALm5wu0fDM8J3u_nWVxYCAnWO_rpeagjTbQ4uOh-2K6ltA=s96-c"
+                            <img src="profile.jfif"
                                 alt="yulimla">
                             <div class="profile-name">
                                 Yulimla
