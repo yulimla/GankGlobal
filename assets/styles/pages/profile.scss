@@ -1,0 +1,85 @@
+.user-profile-info {
+    @apply mt-4 pb-2 px-4 relative;
+    .user-profile-info__wrapper {
+        @apply flex pb-4 flex-row items-start w-full rounded;
+    }
+    @screen sm {
+        @apply flex justify-center;
+    }
+    @screen xl {
+        @apply px-0;
+    }
+}
+
+/* start banner */
+
+.banner-cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @apply mx-auto;
+    max-height: 200px;
+    @screen sm {
+        max-height: 275px;
+    }
+}
+
+/* followers-section */
+.followers-section {
+    display: flex;
+}
+
+/* end banner */
+
+.profile-tab {
+    display: flex;
+    flex-direction: row;
+    transition: margin-left 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    will-change: margin-left;
+    font-size: 1.25rem !important;
+    margin-left: 0 !important;
+    font-weight: 500 !important;
+}
+
+.tablist {
+    border-style: solid !important;
+    border-bottom: 1px solid rgba(147, 126, 126, 0.45098039215686275) !important;
+    button {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0 32px 0 0;
+        padding: 12px 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        border: none;
+        font-size: 1.25rem !important;
+          color: #67687e;
+        &:hover,
+        &:focus,
+        &:active,
+        &:focus-visible {
+            border: unset;
+            outline: none;
+        }
+    }
+    button[data-headlessui-state="selected"] {
+        color: #ed5c5e !important;
+        border-bottom: 1px solid #ed5c5e !important;
+        margin-bottom: -1px;
+        z-index: 2;
+    }
+
+    @media (max-width: 768px) {
+        button {
+            margin-right: 15px;
+        }
+    }
+}
+
+
+/* profile-tabs */
+

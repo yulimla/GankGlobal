@@ -1,0 +1,110 @@
+header {
+    @apply sticky top-0 w-full shadow-xl;
+    padding: 0.25rem 1rem;
+    background-color: #04101b;
+    z-index: 9;
+    @screen sm {
+        padding: 0.25rem 1rem;
+    }
+    @screen lg {
+        padding: 0rem 1rem;
+    }
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    @apply h-[60px];
+    @screen 2xl {
+        @apply h-[72px] mx-auto;
+    }
+    @media (min-width: 1660px) {
+        width: 1500px;
+    }
+}
+
+.gank-logo {
+    @apply inline-flex h-10 w-auto mr-2;
+    @screen md {
+        @apply mr-16;
+    }
+    @screen 2xl {
+        @apply h-[60px] w-auto;
+    }
+}
+
+.menu-link-mobile {
+    @apply flex items-center;
+    @screen xl {
+        @apply hidden;
+    }
+}
+
+.menu-link {
+    @apply hidden w-full items-center justify-between;
+    @screen xl {
+        @apply flex flex-row ml-8 items-center;
+    }
+    .menu-link-list {
+        @apply flex flex-row items-center space-x-4 space-y-5;
+        @screen xl {
+            @apply space-x-5;
+        }
+        @screen 2xl {
+            @apply space-x-10;
+        }
+    }
+    li {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+.menu-item-link {
+    @apply uppercase;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.menu-link-action {
+    @apply flex items-center;
+    font-size: 19px;
+    &__items {
+        @apply flex justify-start items-center space-x-4;
+    }
+}
+
+.gank-avatar-profile {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 500;
+    @apply uppercase;
+    img {
+        width: 42px;
+        height: 42px;
+        line-height: 32px;
+        @apply rounded-full mr-3;
+    }
+}
+
+.notification {
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.language-switcher {
+    @apply rounded-full;
+    --tw-bg-opacity: 1;
+    background-color: rgba(24, 57, 96, var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+}
